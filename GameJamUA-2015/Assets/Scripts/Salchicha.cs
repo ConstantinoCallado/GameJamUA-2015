@@ -8,12 +8,14 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
 
-	const float fuerza = 150;
+	const float fuerza = 200;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
 
 	public Slider sliderToxicidad;
+
+	public Renderer rendererSalchicha;
 
     void Awake()
     {
