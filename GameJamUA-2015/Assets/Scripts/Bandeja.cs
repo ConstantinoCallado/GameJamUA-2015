@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Bandeja : MonoBehaviour 
+{
+	public List<GameObject> listaSalchichas = new List<GameObject>();
+	public GameObject prefabJugador;
+
+	public static Bandeja bandejaRef;
+
+
+	public void Awake()
+	{
+		bandejaRef = this;
+	}
+
+	public void Start()
+	{
+		Respawn();
+	}
+
+	public void Respawn()
+	{
+		if(listaSalchichas.Count > 0)
+		{
+			Destroy(listaSalchichas[listaSalchichas.Count-1]);
+
+			GameObject.Instantiate(prefabJugador, listaSalchichas[listaSalchichas.Count-1].transform.position, Quaternion.identity); 
+
+			listaSalchichas.RemoveAt(listaSalchichas.Count-1);
+
+		}
+		else
+		{
+			Application.Quit();
+		}
+	}
+}
