@@ -168,7 +168,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107793662}
   serializedVersion: 2
-  m_Mass: .0799999982
+  m_Mass: .0599999987
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -231,11 +231,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 22421572, guid: 4e738eea17fdb81458cbc0dd2fd5b10f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447578, guid: 4e738eea17fdb81458cbc0dd2fd5b10f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416768, guid: 4e738eea17fdb81458cbc0dd2fd5b10f, type: 2}
       propertyPath: m_LocalPosition.x

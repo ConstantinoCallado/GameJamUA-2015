@@ -8,7 +8,7 @@ public class Vaso : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         initialCm = GetComponent<Rigidbody>().centerOfMass;
-        GetComponent<Rigidbody>().centerOfMass += (Vector3.one * 0.108f);
+        GetComponent<Rigidbody>().centerOfMass += (Vector3.one * 0.109f);
 	}
 	
 	// Update is called once per frame
