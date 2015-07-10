@@ -8,7 +8,7 @@ public class CocineroBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+
         if (!cambioGiro)
         {
             transform.Rotate(Vector3.up, velocidadGiro);
