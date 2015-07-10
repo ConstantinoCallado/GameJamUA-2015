@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Centinela : MonoBehaviour {
-
+public class Cable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +17,7 @@ public class Centinela : MonoBehaviour {
     {
         if (other.transform.tag == "Salchicha")
         {
-            if (other.GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.1f)
-                {
-                    Debug.Log("PILLADA!!!!");
-                }
+                Debug.Log("Electrocutada!!!!");
         }
     }
 }

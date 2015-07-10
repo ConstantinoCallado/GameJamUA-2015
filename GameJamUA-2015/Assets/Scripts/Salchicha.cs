@@ -72,4 +72,10 @@ public class Salchicha : MonoBehaviour
 			rigidBodyDerecha.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
 		}
 	}
+
+    public void RemoveRandomShit()
+    {
+        if(listaSucia.Capacity>0)
+            listaSucia.RemoveAt(Random.Range(0, listaSucia.Capacity));
+    }
 }
