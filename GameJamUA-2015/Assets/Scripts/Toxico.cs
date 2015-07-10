@@ -11,7 +11,7 @@ public class Toxico : MonoBehaviour
 		if(other.transform.tag == "Salchicha")
 		{
 			Salchicha.playerRef.toxicidadActual += toxicidad;
-
+			Salchicha.playerRef.listaSucia.Add(other.gameObject);
 			Pegarse (other);
 			Destroy(collider);
 		}
