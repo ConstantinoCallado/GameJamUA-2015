@@ -5,7 +5,7 @@ public class Toxico : MonoBehaviour
 {
 	public float toxicidad;
 
-	public void OnTriggerEnter(Collision other)
+	public void OnTriggerEnter(Collider other)
 	{
 		if(other.transform.tag == "Salchicha")
 		{

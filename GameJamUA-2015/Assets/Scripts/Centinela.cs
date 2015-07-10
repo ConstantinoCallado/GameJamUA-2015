@@ -12,4 +12,12 @@ public class Centinela : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Salchicha")
+        {
+            Debug.Log("PILLADA!!!");
+        }
+    }
 }
