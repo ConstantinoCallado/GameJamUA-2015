@@ -1,27 +1,22 @@
 fileFormatVersion: 2
-guid: 5e16e9be7a751214f818c5cfcbb7736e
-timeCreated: 1436564614
+guid: c2ceaf2978f10ce4a8409880ff88cab8
+timeCreated: 1436564615
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Line001
-    100004: Line002
-    100006: Rectangle001
-    400000: //RootNode
-    400002: Line001
-    400004: Line002
-    400006: Rectangle001
-    2300000: Line001
-    2300002: Line002
-    2300004: Rectangle001
-    3300000: Line001
-    3300002: Line002
-    3300004: Rectangle001
-    4300000: Line001
-    4300002: Line002
-    4300004: Rectangle001
+    100000: Box001
+    100002: //RootNode
+    100004: Line001
+    400000: Box001
+    400002: //RootNode
+    400004: Line001
+    2300000: Box001
+    2300002: Line001
+    3300000: Box001
+    3300002: Line001
+    4300000: Box001
+    4300002: Line001
     9500000: //RootNode
   materials:
     importMaterials: 1

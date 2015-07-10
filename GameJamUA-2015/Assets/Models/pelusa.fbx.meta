@@ -1,28 +1,15 @@
 fileFormatVersion: 2
-guid: 5e16e9be7a751214f818c5cfcbb7736e
-timeCreated: 1436564614
+guid: 7da12465e40b2db428de1e104654b6e2
+timeCreated: 1436568287
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Line001
-    100004: Line002
-    100006: Rectangle001
     400000: //RootNode
-    400002: Line001
-    400004: Line002
-    400006: Rectangle001
-    2300000: Line001
-    2300002: Line002
-    2300004: Rectangle001
-    3300000: Line001
-    3300002: Line002
-    3300004: Rectangle001
-    4300000: Line001
-    4300002: Line002
-    4300004: Rectangle001
-    9500000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: BezierCurve
   materials:
     importMaterials: 1
     materialName: 0
@@ -76,7 +63,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

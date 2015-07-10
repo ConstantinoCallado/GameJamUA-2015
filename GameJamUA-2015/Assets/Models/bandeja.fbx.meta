@@ -1,28 +1,35 @@
 fileFormatVersion: 2
-guid: 5e16e9be7a751214f818c5cfcbb7736e
-timeCreated: 1436564614
+guid: 7d21c4131f80b8142937ce8cd0c6bc2a
+timeCreated: 1436567293
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Line001
-    100004: Line002
-    100006: Rectangle001
+    100002: Plastico
+    100004: Salchicha1
+    100006: Salchicha2
+    100008: Salchicha3
     400000: //RootNode
-    400002: Line001
-    400004: Line002
-    400006: Rectangle001
-    2300000: Line001
-    2300002: Line002
-    2300004: Rectangle001
-    3300000: Line001
-    3300002: Line002
-    3300004: Rectangle001
-    4300000: Line001
-    4300002: Line002
-    4300004: Rectangle001
-    9500000: //RootNode
+    400002: Plastico
+    400004: Salchicha1
+    400006: Salchicha2
+    400008: Salchicha3
+    2300000: //RootNode
+    2300002: Plastico
+    2300004: Salchicha1
+    2300006: Salchicha2
+    2300008: Salchicha3
+    3300000: //RootNode
+    3300002: Plastico
+    3300004: Salchicha1
+    3300006: Salchicha2
+    3300008: Salchicha3
+    4300000: Bandeja
+    4300002: Salchicha2
+    4300004: Salchicha1
+    4300006: Salchicha3
+    4300008: Plastico
   materials:
     importMaterials: 1
     materialName: 0
@@ -76,7 +83,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
