@@ -6,6 +6,7 @@ public class Salchicha : MonoBehaviour
 {
 	public Rigidbody rigidBodyDerecha;
 	public Rigidbody rigidBodyIzquierda;
+    public static Salchicha playerRef;
 
 	const float fuerza = 150;
 
@@ -13,6 +14,11 @@ public class Salchicha : MonoBehaviour
 	public float toxicidadActual = 0;
 
 	public Slider sliderToxicidad;
+
+    void Awake()
+    {
+        playerRef = this;
+    }
 
 	void Update () 
 	{
