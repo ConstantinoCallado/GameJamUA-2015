@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Centinela : MonoBehaviour {
 
+    public float umbralDeteccion = 4f;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,7 +19,10 @@ public class Centinela : MonoBehaviour {
     {
         if (other.transform.tag == "Salchicha")
         {
-            Debug.Log("PILLADA!!!");
+                if(other.GetComponent<Rigidbody>().velocity.sqrMagnitude >= umbralDeteccion)
+                {
+                    Debug.Log("PILLADA!!!!");
+                }
         }
     }
 }
