@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
+using System.Collections.Generic;
 public class Salchicha : MonoBehaviour 
 {
 	public Rigidbody rigidBodyDerecha;
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
-
+    public ArrayList listaSucia;
 	const float fuerza = 200;
 
 	const float toxicidadMaxima = 100; 
@@ -20,6 +20,7 @@ public class Salchicha : MonoBehaviour
     void Awake()
     {
         playerRef = this;
+        listaSucia = new ArrayList();
     }
 
 	void Update () 
