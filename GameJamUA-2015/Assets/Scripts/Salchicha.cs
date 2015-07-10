@@ -5,8 +5,14 @@ public class Salchicha : MonoBehaviour
 {
 	public Rigidbody rigidBodyDerecha;
 	public Rigidbody rigidBodyIzquierda;
+    public static Salchicha playerRef;
 
 	public float fuerza = 5;
+
+    void Awake()
+    {
+        playerRef = this;
+    }
 
 	void Update () 
 	{

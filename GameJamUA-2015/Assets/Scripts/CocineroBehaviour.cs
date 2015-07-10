@@ -4,11 +4,13 @@ using System.Collections;
 public class CocineroBehaviour : MonoBehaviour {
 
     private bool cambioGiro = false;
-    Salchicha player = Salchicha.playerRef;
-
+    Salchicha player;
+    private Centinela[] centinelas = new Centinela[2];
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+
+        player = Salchicha.playerRef;
+        centinelas = GetComponentsInChildren<Centinela>();
 	}
 	
 	// Update is called once per frame
@@ -32,8 +34,8 @@ public class CocineroBehaviour : MonoBehaviour {
                 cambioGiro = false;
         }
 
-        if (player.transform.position.z > GameObject.Find("CentinelaIzq").transform.position.z &&
-            player.transform.position.z < GameObject.Find("CentinelaDer").transform.position.z)
+        if (player.transform.position.z > centinelas[0].transform.position.z &&
+            player.transform.position.z < centinelas[1].transform.position.z)
             Debug.Log("MUERE!!!!");
 	}
 }
