@@ -17,7 +17,7 @@ public class Cable : MonoBehaviour {
     {
         if (other.transform.tag == "Salchicha")
         {
-                Debug.Log("Electrocutada!!!!");
+            Salchicha.playerRef.Electrocutar();
         }
     }
 }

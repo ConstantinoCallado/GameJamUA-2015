@@ -17,14 +17,16 @@ public class Salchicha : MonoBehaviour
 
 	public Renderer rendererSalchicha;
 	public SkinnedMeshRenderer meshRenderer;
-
+    public Mesh salchichaElec;
 	public Texture spriteWASD;
 	public Texture spriteFlechas;
+    public Material materialElec;
 
 	public Transform centroTextoL;
 	public Transform centroTextoR;
 
 	private bool isCortado = false;
+    private bool isElectrocutado = false;
 	public Mesh meshCortado;
 	public CharacterJoint juntaACortar;
 
@@ -36,7 +38,8 @@ public class Salchicha : MonoBehaviour
 	void Update () 
 	{
 		sliderToxicidad.value = toxicidadActual / toxicidadMaxima;
-		checkUserInput();
+        if(!isElectrocutado)
+		    checkUserInput();
 
 		if(rigidBodyDerecha.transform.position.y < -10)
 		{
@@ -133,6 +136,30 @@ public class Salchicha : MonoBehaviour
 
     public void Electrocutar()
     {
+        if(!isElectrocutado)
+        {
+            isElectrocutado = true;
+            StartCoroutine(Electrificar());
+            
+            StartCoroutine(corutinaRespawn(1.3f));
+        }
+    }
 
+    IEnumerator Electrificar()
+    {
+        Mesh auxMesh = meshRenderer.sharedMesh;
+        Material auxMat = meshRenderer.material;
+
+        int zaps = 0;
+        while(zaps < 5)
+        {
+           //meshRenderer.sharedMesh = salchichaElec;
+            meshRenderer.material = materialElec;
+            yield return new WaitForSeconds(0.1f);
+            //meshRenderer.sharedMesh = auxMesh;
+            meshRenderer.material = auxMat;
+            yield return new WaitForSeconds(0.1f);
+            zaps++;
+        }
     }
 }
