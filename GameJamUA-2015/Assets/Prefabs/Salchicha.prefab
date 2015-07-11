@@ -277,11 +277,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 2.52999997, y: .150000006, z: -1.96000004}
-=======
   m_LocalPosition: {x: -.0309999995, y: .699999988, z: 3.30699992}
->>>>>>> origin/master
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children:
   - {fileID: 447058}
@@ -615,10 +611,6 @@ MonoBehaviour:
   rigidBodyDerecha: {fileID: 5486654}
   rigidBodyIzquierda: {fileID: 5436508}
   toxicidadActual: 0
-<<<<<<< HEAD
-  sliderToxicidad: {fileID: 0}
-  rendererSalchicha: {fileID: 0}
-=======
   sliderToxicidad: {fileID: 11415284}
   rendererSalchicha: {fileID: 13744304}
 --- !u!114 &11485612
@@ -696,7 +688,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152610}
   m_Enabled: 1
->>>>>>> origin/master
 --- !u!136 &13628626
 CapsuleCollider:
   m_ObjectHideFlags: 1
