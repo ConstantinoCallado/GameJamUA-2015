@@ -8,7 +8,7 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
     public ArrayList listaSucia;
-	const float fuerza = 300;
+	const float fuerza = 250;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
@@ -87,7 +87,7 @@ public class Salchicha : MonoBehaviour
 
 	public void OnGUI()
 	{
-		float scale = Screen.width / 1500;
+		float scale = Screen.width / 1600;
 		Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
 		GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
 	
