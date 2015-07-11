@@ -8,7 +8,7 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
 	public List<Toxico> listaSucia = new List<Toxico>();
-	const float fuerza = 250;
+	const float fuerza = 200;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
@@ -28,7 +28,10 @@ public class Salchicha : MonoBehaviour
 	private bool isCortado = false;
     private bool isElectrocutado = false;
 	public Mesh meshCortado;
-	public CharacterJoint juntaACortar;
+	public CharacterJoint juntaACortar1;
+	public CharacterJoint juntaACortar2;
+
+	public bool respawning = false;
 
     void Awake()
     {
@@ -41,9 +44,9 @@ public class Salchicha : MonoBehaviour
         if(!isElectrocutado)
 		    checkUserInput();
 
-		if(rigidBodyDerecha.transform.position.y < -10)
+		if(rigidBodyDerecha.transform.position.y < -1 && !respawning)
 		{
-			Kill();
+			StartCoroutine(corutinaRespawn(1.5f));
 		}
 	}
 
@@ -65,7 +68,6 @@ public class Salchicha : MonoBehaviour
 		{
 			rigidBodyIzquierda.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
 		}
-		
 		
 		if(Input.GetKey(KeyCode.LeftArrow))
 		{
@@ -112,10 +114,11 @@ public class Salchicha : MonoBehaviour
 
 	public void Cortar ()
 	{
-		if(!isCortado)
+		if(!respawning)
 		{
 			meshRenderer.sharedMesh = meshCortado;
-			Destroy (juntaACortar);
+			Destroy (juntaACortar1);
+			Destroy (juntaACortar2);
 			isCortado = true;
 			StartCoroutine(corutinaRespawn(1.5f));
 		}
@@ -129,6 +132,8 @@ public class Salchicha : MonoBehaviour
 
 	public IEnumerator corutinaRespawn(float tiempo)
 	{
+		respawning = true;
+
 		yield return new WaitForSeconds(tiempo);
 
 		Kill();

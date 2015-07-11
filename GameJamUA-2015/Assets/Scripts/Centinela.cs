@@ -1,24 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Centinela : MonoBehaviour {
-
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
+public class Centinela : MonoBehaviour 
+{
     public void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Salchicha")
         {
-            if (other.GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.1f)
+            if (other.GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.2f)
                 {
                     Debug.Log("PILLADA!!!!");
                 }

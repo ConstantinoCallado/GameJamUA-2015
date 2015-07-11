@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 15
+  toxicidad: 12
   collider: {fileID: 13528322}
 --- !u!135 &13528322
 SphereCollider:
