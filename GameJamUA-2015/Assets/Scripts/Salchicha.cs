@@ -135,4 +135,9 @@ public class Salchicha : MonoBehaviour
 
 		Kill();
 	}
+
+    public void Electrocutar()
+    {
+
+    }
 }
