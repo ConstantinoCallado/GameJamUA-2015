@@ -367,7 +367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405598, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 11419958, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
       propertyPath: velocidadGiro
@@ -933,7 +933,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .170000002
+      value: .137999997
       objectReference: {fileID: 0}
     - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1239,7 +1239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430472, guid: 24eb67a55431c2448be1ede71956db4c, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 115558, guid: 24eb67a55431c2448be1ede71956db4c, type: 2}
       propertyPath: m_Name

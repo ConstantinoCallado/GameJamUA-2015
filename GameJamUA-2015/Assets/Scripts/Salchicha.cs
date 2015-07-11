@@ -91,10 +91,14 @@ public class Salchicha : MonoBehaviour
 		{
 			rigidBodyDerecha.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
 		}
+
+		SoundManager.soundManagerRef.audioRodar.volume = (rigidBodyDerecha.velocity.sqrMagnitude + rigidBodyIzquierda.velocity.sqrMagnitude);
 	}
 
     public void RemoveRandomShit()
     {
+		SoundManager.soundManagerRef.audioLimpiar.Play();
+
 		int randomIndex = Random.Range(0, listaSucia.Count);
         
 		if(listaSucia.Count>0)
@@ -125,6 +129,7 @@ public class Salchicha : MonoBehaviour
 	{
 		if(!respawning)
 		{
+			SoundManager.soundManagerRef.audioCortar.Play();
 			meshRenderer.sharedMesh = meshCortado;
 			Destroy (juntaACortar1);
 			Destroy (juntaACortar2);
@@ -152,6 +157,7 @@ public class Salchicha : MonoBehaviour
     {
         if(!isElectrocutado)
         {
+			SoundManager.soundManagerRef.audioElect.Play();
             isElectrocutado = true;
             StartCoroutine(Electrificar());
             
