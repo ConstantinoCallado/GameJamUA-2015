@@ -8,7 +8,7 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
 	public List<Toxico> listaSucia = new List<Toxico>();
-	const float fuerza = 250;
+	const float fuerza = 300;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
