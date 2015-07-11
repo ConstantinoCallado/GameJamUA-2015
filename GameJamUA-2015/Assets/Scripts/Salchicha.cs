@@ -28,6 +28,8 @@ public class Salchicha : MonoBehaviour
 	public Mesh meshCortado;
 	public CharacterJoint juntaACortar;
 
+	public bool respawning = false;
+
     void Awake()
     {
         playerRef = this;
@@ -38,9 +40,9 @@ public class Salchicha : MonoBehaviour
 		sliderToxicidad.value = toxicidadActual / toxicidadMaxima;
 		checkUserInput();
 
-		if(rigidBodyDerecha.transform.position.y < -10)
+		if(rigidBodyDerecha.transform.position.y < -1 && !respawning)
 		{
-			Kill();
+			StartCoroutine(corutinaRespawn(1.5f));
 		}
 	}
 
@@ -109,7 +111,7 @@ public class Salchicha : MonoBehaviour
 
 	public void Cortar ()
 	{
-		if(!isCortado)
+		if(!respawning)
 		{
 			meshRenderer.sharedMesh = meshCortado;
 			Destroy (juntaACortar);
@@ -126,6 +128,8 @@ public class Salchicha : MonoBehaviour
 
 	public IEnumerator corutinaRespawn(float tiempo)
 	{
+		respawning = true;
+
 		yield return new WaitForSeconds(tiempo);
 
 		Kill();
