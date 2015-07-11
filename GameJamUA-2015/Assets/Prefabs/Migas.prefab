@@ -25,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.768000007, y: .125599995, z: -1.91299999}
+  m_LocalRotation: {x: 0, y: -.848533273, z: 0, w: .529142082}
+  m_LocalPosition: {x: -1.19299996, y: .112999998, z: .391000003}
   m_LocalScale: {x: .300000012, y: .300000012, z: .300000012}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 8
+  toxicidad: 10
   collider: {fileID: 13521522}
 --- !u!135 &13521522
 SphereCollider:
@@ -230,7 +230,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4278612105
+        rgba: 4280700997
       minMaxState: 0
     startSize:
       scalar: .100000001
@@ -1099,7 +1099,7 @@ ParticleSystemRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c52add72d0d78944db9c5598b56bd4bf, type: 2}
+  - {fileID: 2100000, guid: c1f03a96ad9362649a46bbfeb1bf5b59, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

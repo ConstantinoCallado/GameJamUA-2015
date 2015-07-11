@@ -35,8 +35,12 @@ public class Salchicha : MonoBehaviour
 
 	public bool respawning = false;
 
+
+	public bool showUI = true;
+
     void Awake()
     {
+		showUI = true;
         playerRef = this;
     }
 
@@ -106,12 +110,15 @@ public class Salchicha : MonoBehaviour
 
 	public void OnGUI()
 	{
-		float scale = Screen.width / 600;
-		Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
-		GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
-	
-		position = Camera.main.WorldToScreenPoint(centroTextoR.position);
-		GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+		if(showUI)
+		{
+			float scale = Screen.width / 800;
+			Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
+			GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
+		
+			position = Camera.main.WorldToScreenPoint(centroTextoR.position);
+			GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+		}
 	}
 
 	public void Cortar ()

@@ -1829,7 +1829,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.15199995, y: -.340000004, z: -5.5}
+  m_LocalPosition: {x: -2.1400001, y: -.379999995, z: -12.8199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 452632}
@@ -3275,6 +3275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b079efff9352355469ad961f45ecb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabCinematica: {fileID: 11479558, guid: ad38c35c424bbed44ae0a43ccd765b1b, type: 2}
 --- !u!120 &12062228
 LineRenderer:
   m_ObjectHideFlags: 1

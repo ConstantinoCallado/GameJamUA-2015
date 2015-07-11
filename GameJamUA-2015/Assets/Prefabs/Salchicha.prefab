@@ -308,12 +308,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .21619314, y: .0750000328, z: -.243297696}
-  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
+  m_LocalPosition: {x: -.116634041, y: .0749999881, z: -.864525497}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
   m_Children:
+  - {fileID: 449792}
   - {fileID: 447058}
   - {fileID: 428176}
-  - {fileID: 449792}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &413732
@@ -323,7 +323,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 486990}
@@ -339,7 +339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 404952}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &447058
 Transform:
   m_ObjectHideFlags: 1
@@ -355,7 +355,7 @@ Transform:
   - {fileID: 481464}
   - {fileID: 495266}
   m_Father: {fileID: 404952}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &449792
 Transform:
   m_ObjectHideFlags: 1
@@ -363,12 +363,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152610}
   m_LocalRotation: {x: .415626973, y: .572061479, z: -.415627033, w: .57206136}
-  m_LocalPosition: {x: -17.6000004, y: 36.2999992, z: 26.5}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -22, y: 45.375, z: 33.125}
+  m_LocalScale: {x: 12.500001, y: 12.499999, z: 12.499999}
   m_Children:
   - {fileID: 22409256}
   m_Father: {fileID: 404952}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!4 &472582
 Transform:
   m_ObjectHideFlags: 1
@@ -426,7 +426,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 481464}
@@ -463,7 +463,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!54 &5436508
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -985,7 +984,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 3.4000001, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.39999986, y: 0, z: 0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
