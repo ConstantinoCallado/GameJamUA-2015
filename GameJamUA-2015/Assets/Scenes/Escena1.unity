@@ -386,7 +386,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &707323511
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +498,58 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 425046, guid: 6548215bb72777f439df208af4d10746, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11436462, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: ConGas
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19870152, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19843952, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19885466, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19884732, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19884650, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19833824, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19880852, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19810374, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19897346, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19821438, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19815708, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19806210, guid: 6548215bb72777f439df208af4d10746, type: 2}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
