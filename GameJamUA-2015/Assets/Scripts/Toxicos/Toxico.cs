@@ -19,6 +19,7 @@ public class Toxico : MonoBehaviour
 
 	public virtual void Pegarse(Collider other)
 	{
+		SoundManager.soundManagerRef.audioCoger.Play();
 		transform.parent = other.transform;
 		//transform.localPosition = Vector3.zero;
 	}

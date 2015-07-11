@@ -26,6 +26,7 @@ public class Centinela : MonoBehaviour
 		GameObject instanciado = GameObject.Instantiate(prefabCinematica.gameObject);
 		instanciado.transform.position = new Vector3(900, 900, 900);
 		instanciado.GetComponent<CinematicaChafar>().Show(3);
+		SoundManager.soundManagerRef.audioAplastar.PlayDelayed(1);
 		yield return new WaitForSeconds(3);
 
 		Destroy(instanciado);
