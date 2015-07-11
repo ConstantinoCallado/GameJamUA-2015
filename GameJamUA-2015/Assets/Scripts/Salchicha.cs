@@ -87,7 +87,7 @@ public class Salchicha : MonoBehaviour
 
 	public void OnGUI()
 	{
-		float scale = Screen.width / 1600;
+		float scale = Screen.width / 600;
 		Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
 		GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
 	
