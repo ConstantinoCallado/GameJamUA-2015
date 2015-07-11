@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Vaso : MonoBehaviour {
 
+    public GameObject meshAgua;
+
 	// Use this for initialization
 	void Start () {
         GetComponent<Rigidbody>().centerOfMass += (Vector3.one * 0.05f);
