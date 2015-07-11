@@ -8,7 +8,7 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
     public ArrayList listaSucia;
-	const float fuerza = 200;
+	const float fuerza = 300;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
@@ -16,6 +16,12 @@ public class Salchicha : MonoBehaviour
 	public Slider sliderToxicidad;
 
 	public Renderer rendererSalchicha;
+
+	public Texture spriteWASD;
+	public Texture spriteFlechas;
+
+	public Transform centroTextoL;
+	public Transform centroTextoR;
 
     void Awake()
     {
@@ -78,4 +84,14 @@ public class Salchicha : MonoBehaviour
         if(listaSucia.Capacity>0)
             listaSucia.RemoveAt(Random.Range(0, listaSucia.Capacity));
     }
+
+	public void OnGUI()
+	{
+		float scale = Screen.width / 1500;
+		Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
+		GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
+	
+		position = Camera.main.WorldToScreenPoint(centroTextoR.position);
+		GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+	}
 }

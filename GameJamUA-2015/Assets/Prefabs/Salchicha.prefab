@@ -32,6 +32,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &110834
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413732}
+  m_Layer: 0
+  m_Name: CentroTextoL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &114358
 GameObject:
   m_ObjectHideFlags: 1
@@ -44,6 +59,21 @@ GameObject:
   - 114: {fileID: 11456790}
   m_Layer: 5
   m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &119820
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499602}
+  m_Layer: 0
+  m_Name: CentroTextoR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,13 +307,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0309999995, y: .699999988, z: 3.30699992}
+  m_LocalPosition: {x: -.0309999995, y: .699999988, z: 2.2650001}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children:
   - {fileID: 447058}
   - {fileID: 428176}
   - {fileID: 449792}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &413732
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486990}
   m_RootOrder: 0
 --- !u!4 &428176
 Transform:
@@ -347,7 +389,8 @@ Transform:
   m_LocalRotation: {x: .707106829, y: 0, z: -0, w: .707106709}
   m_LocalPosition: {x: -4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 499602}
   m_Father: {fileID: 447058}
   m_RootOrder: 2
 --- !u!4 &486990
@@ -359,7 +402,8 @@ Transform:
   m_LocalRotation: {x: .707106829, y: 0, z: -0, w: .707106709}
   m_LocalPosition: {x: 4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 413732}
   m_Father: {fileID: 447058}
   m_RootOrder: 0
 --- !u!4 &495266
@@ -374,6 +418,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 447058}
   m_RootOrder: 3
+--- !u!4 &499602
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 481464}
+  m_RootOrder: 0
 --- !u!20 &2074384
 Camera:
   m_ObjectHideFlags: 1
@@ -613,6 +669,10 @@ MonoBehaviour:
   toxicidadActual: 0
   sliderToxicidad: {fileID: 11415284}
   rendererSalchicha: {fileID: 13744304}
+  spriteWASD: {fileID: 2800000, guid: 11318ad9adf4bc748a834544affd132f, type: 3}
+  spriteFlechas: {fileID: 2800000, guid: cadb048c2c76e134aac1a915d358f5f3, type: 3}
+  centroTextoL: {fileID: 413732}
+  centroTextoR: {fileID: 499602}
 --- !u!114 &11485612
 MonoBehaviour:
   m_ObjectHideFlags: 1
