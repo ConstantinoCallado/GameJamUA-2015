@@ -152,7 +152,7 @@ public class Salchicha : MonoBehaviour
 
     IEnumerator Electrificar()
     {
-        Mesh auxMesh = meshRenderer.sharedMesh;
+        //Mesh auxMesh = meshRenderer.sharedMesh;
         Material auxMat = meshRenderer.material;
 
         int zaps = 0;
