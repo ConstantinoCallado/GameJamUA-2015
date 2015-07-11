@@ -16,12 +16,17 @@ public class Salchicha : MonoBehaviour
 	public Slider sliderToxicidad;
 
 	public Renderer rendererSalchicha;
+	public SkinnedMeshRenderer meshRenderer;
 
 	public Texture spriteWASD;
 	public Texture spriteFlechas;
 
 	public Transform centroTextoL;
 	public Transform centroTextoR;
+
+	private bool isCortado = false;
+	public Mesh meshCortado;
+	public CharacterJoint juntaACortar;
 
     void Awake()
     {
@@ -35,8 +40,7 @@ public class Salchicha : MonoBehaviour
 
 		if(rigidBodyDerecha.transform.position.y < -10)
 		{
-			Bandeja.bandejaRef.Respawn();
-			DestroyImmediate(gameObject);
+			Kill();
 		}
 	}
 
@@ -101,5 +105,29 @@ public class Salchicha : MonoBehaviour
 	
 		position = Camera.main.WorldToScreenPoint(centroTextoR.position);
 		GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+	}
+
+	public void Cortar ()
+	{
+		if(!isCortado)
+		{
+			meshRenderer.sharedMesh = meshCortado;
+			Destroy (juntaACortar);
+			isCortado = true;
+			StartCoroutine(corutinaRespawn(1.5f));
+		}
+	}
+
+	public void Kill()
+	{
+		Bandeja.bandejaRef.Respawn();
+		DestroyImmediate(gameObject);
+	}
+
+	public IEnumerator corutinaRespawn(float tiempo)
+	{
+		yield return new WaitForSeconds(tiempo);
+
+		Kill();
 	}
 }

@@ -361,8 +361,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152610}
-  m_LocalRotation: {x: -.430458874, y: -.560986459, z: .430460542, w: -.560984015}
-  m_LocalPosition: {x: -11.6999998, y: 33, z: 1.39999998}
+  m_LocalRotation: {x: .415626973, y: .572061479, z: -.415627033, w: .57206136}
+  m_LocalPosition: {x: -17.6000004, y: 36.2999992, z: 26.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 22409256}
@@ -666,13 +666,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidBodyDerecha: {fileID: 5486654}
   rigidBodyIzquierda: {fileID: 5436508}
+  listaSucia: []
   toxicidadActual: 0
   sliderToxicidad: {fileID: 11415284}
   rendererSalchicha: {fileID: 13744304}
+  meshRenderer: {fileID: 13744304}
   spriteWASD: {fileID: 2800000, guid: 11318ad9adf4bc748a834544affd132f, type: 3}
   spriteFlechas: {fileID: 2800000, guid: cadb048c2c76e134aac1a915d358f5f3, type: 3}
   centroTextoL: {fileID: 413732}
   centroTextoR: {fileID: 499602}
+  meshCortado: {fileID: 4300000, guid: 3fb14fc45f5a14e4b92b0f3914f035ef, type: 3}
+  juntaACortar: {fileID: 14488510}
 --- !u!114 &11485612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -849,7 +853,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.79999995, y: 0, z: -0}
+  m_ConnectedAnchor: {x: -2.79999971, y: 0, z: -0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -933,7 +937,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -3.4000001, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.39999962, y: 0, z: 0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
