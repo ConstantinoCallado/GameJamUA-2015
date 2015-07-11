@@ -7,11 +7,9 @@ public class Fogones : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-		Debug.Log("ADAS");
-        if (other.transform.tag == "Salchicha" && particle.isPlaying)
+		if (other.transform.tag == "Salchicha" && particle.isPlaying)
         {
-			Debug.Log("VASDAS");
-            Salchicha.playerRef.Quemar();
+			Salchicha.playerRef.Quemar();
         }
     }
 }

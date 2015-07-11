@@ -116,12 +116,16 @@ public class Salchicha : MonoBehaviour
 	{
 		if(showUI)
 		{
-			float scale = Screen.height / 800;
+			double scale = Screen.height / 1000.0;
+		
 			Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
-			GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
+			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteWASD.width / 2)), 
+			                         (float)(Screen.height - (position.y + (scale * spriteWASD.height /2))), (float)(scale * spriteWASD.width), 
+
+			                         (float)(scale * spriteWASD.height)), spriteWASD);
 		
 			position = Camera.main.WorldToScreenPoint(centroTextoR.position);
-			GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteFlechas.width / 2)), (float)(Screen.height - (position.y + (scale * spriteFlechas.height / 2))), (float) (scale * spriteFlechas.width), (float)(scale * spriteFlechas.height)), spriteFlechas);
 		}
 	}
 
