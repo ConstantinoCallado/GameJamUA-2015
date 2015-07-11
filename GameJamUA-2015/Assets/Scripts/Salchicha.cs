@@ -7,7 +7,7 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyDerecha;
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
-    public ArrayList listaSucia;
+	public List<Toxico> listaSucia = new List<Toxico>();
 	const float fuerza = 250;
 
 	const float toxicidadMaxima = 100; 
@@ -26,7 +26,6 @@ public class Salchicha : MonoBehaviour
     void Awake()
     {
         playerRef = this;
-        listaSucia = new ArrayList();
     }
 
 	void Update () 
@@ -81,9 +80,18 @@ public class Salchicha : MonoBehaviour
 
     public void RemoveRandomShit()
     {
-        if(listaSucia.Capacity>0)
-            listaSucia.RemoveAt(Random.Range(0, listaSucia.Capacity));
-    }
+		int randomIndex = Random.Range(0, listaSucia.Count);
+        
+		if(listaSucia.Count>0)
+		{
+			if(listaSucia[randomIndex] != null)
+			{
+				toxicidadActual -= listaSucia[randomIndex].toxicidad;
+				Destroy(listaSucia[randomIndex].gameObject); 
+			}
+			listaSucia.RemoveAt(randomIndex);
+    	}
+	}
 
 	public void OnGUI()
 	{
