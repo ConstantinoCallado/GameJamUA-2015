@@ -27,5 +27,6 @@ public class Plato : MonoBehaviour
 		{
 			Debug.Log("Toxicidad NO alcanzada!");
 		}
+        LevelManager.LoadLevel();
 	}
 }

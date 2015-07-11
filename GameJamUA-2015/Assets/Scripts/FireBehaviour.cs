@@ -4,12 +4,16 @@ using System.Collections;
 public class FireBehaviour : MonoBehaviour {
 
     private ParticleSystem[] fogones;
+    public bool ConGas = true;
 
 	// Use this for initialization
 	void Awake () {
 
-        fogones = GetComponentsInChildren<ParticleSystem>();
-        StartCoroutine(Fogones());
+        if (ConGas)
+        {
+            fogones = GetComponentsInChildren<ParticleSystem>();
+            StartCoroutine(Fogones());
+        }
 	}
 	
 
