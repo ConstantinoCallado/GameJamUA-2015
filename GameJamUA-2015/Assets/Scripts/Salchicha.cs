@@ -27,6 +27,8 @@ public class Salchicha : MonoBehaviour
 
 	private bool isCortado = false;
     private bool isElectrocutado = false;
+    private bool isQuemado = false;
+
 	public Mesh meshCortado;
 	public CharacterJoint juntaACortar1;
 	public CharacterJoint juntaACortar2;
@@ -150,7 +152,7 @@ public class Salchicha : MonoBehaviour
         }
     }
 
-    IEnumerator Electrificar()
+    public IEnumerator Electrificar()
     {
         //Mesh auxMesh = meshRenderer.sharedMesh;
         Material auxMat = meshRenderer.material;
@@ -166,5 +168,28 @@ public class Salchicha : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             zaps++;
         }
+    }
+
+    public void Quemar()
+    {
+        if (!isQuemado)
+        {
+            isQuemado = true;
+            StartCoroutine(Quemazon());
+
+            StartCoroutine(corutinaRespawn(1.3f));
+        }
+    }
+
+    public IEnumerator Quemazon()
+    {
+        Material mat = gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material;
+
+        while(true)
+        {
+            mat.color = Color.Lerp(mat.color, Color.black, Time.deltaTime * 2f);
+            yield return new WaitForEndOfFrame();
+        }
+
     }
 }
