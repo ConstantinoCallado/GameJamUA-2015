@@ -22,7 +22,7 @@ public class Charco : MonoBehaviour {
         if (other.transform.tag == "Encimera" && !derramado)
         {
             Vector3 posToSpawn = GetComponent<Collider>().transform.position;
-            GameObject aux = (GameObject)Instantiate(charco,new Vector3(posToSpawn.x,other.transform.position.y+0.03f,posToSpawn.z),Quaternion.Euler(new Vector3(90,0,0)));
+            GameObject aux = (GameObject)Instantiate(charco,new Vector3(posToSpawn.x,other.transform.position.y+0.157f,posToSpawn.z),Quaternion.Euler(new Vector3(90,0,0)));
             Vector3 finalScale = aux.transform.localScale;
             aux.transform.localScale = Vector3.zero;
             derramado = true;
@@ -30,11 +30,12 @@ public class Charco : MonoBehaviour {
             StartCoroutine(Derramando(aux,finalScale));
         }
     }
+
     IEnumerator Derramando(GameObject aux,Vector3 finalScale)
     {
         while(aux.transform.localScale.sqrMagnitude < finalScale.sqrMagnitude)
         {
-            aux.transform.localScale += Vector3.one * 0.4f * Time.deltaTime;
+            aux.transform.localScale += Vector3.one * 0.1f * Time.deltaTime;
             yield return new WaitForEndOfFrame();
 
         }
