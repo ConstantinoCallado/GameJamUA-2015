@@ -10,8 +10,6 @@ GameObject:
   - 4: {fileID: 464616}
   - 114: {fileID: 11475278}
   - 135: {fileID: 13521522}
-  - 33: {fileID: 3343362}
-  - 23: {fileID: 2341618}
   - 198: {fileID: 19899350}
   - 199: {fileID: 19990290}
   m_Layer: 0
@@ -33,37 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2341618
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116326}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: c52add72d0d78944db9c5598b56bd4bf, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &3343362
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116326}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11475278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 20
+  toxicidad: 10
   collider: {fileID: 13521522}
 --- !u!135 &13521522
 SphereCollider:

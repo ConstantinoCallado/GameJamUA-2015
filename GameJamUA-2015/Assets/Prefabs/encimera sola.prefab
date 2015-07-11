@@ -1,47 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &101284
+--- !u!1 &197328
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 416456}
-  - 33: {fileID: 3392276}
-  - 23: {fileID: 2346040}
-  - 135: {fileID: 13528322}
-  - 114: {fileID: 11423014}
+  - 4: {fileID: 460960}
+  - 33: {fileID: 3374718}
+  - 23: {fileID: 2370792}
+  - 65: {fileID: 6530804}
   m_Layer: 0
-  m_Name: Pelusa
+  m_Name: encimera sola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &416456
+--- !u!4 &460960
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101284}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106709}
-  m_LocalPosition: {x: 0, y: .651000023, z: 0}
-  m_LocalScale: {x: .682008982, y: .681558073, z: .681558073}
+  m_GameObject: {fileID: 197328}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2346040
+--- !u!23 &2370792
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101284}
+  m_GameObject: {fileID: 197328}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c84f2c4c1bd97fd438ee6519b7db2f87, type: 2}
+  - {fileID: 2100000, guid: c406105165f57194cafe72af332bf8f4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -55,38 +54,25 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3392276
+--- !u!33 &3374718
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101284}
-  m_Mesh: {fileID: 4300000, guid: 7da12465e40b2db428de1e104654b6e2, type: 3}
---- !u!114 &11423014
-MonoBehaviour:
+  m_GameObject: {fileID: 197328}
+  m_Mesh: {fileID: 4300000, guid: cbb607d70bb663c44aabed8a405159eb, type: 3}
+--- !u!65 &6530804
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toxicidad: 15
-  collider: {fileID: 13528322}
---- !u!135 &13528322
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101284}
+  m_GameObject: {fileID: 197328}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .0700000003
-  m_Center: {x: .0243384391, y: -.00937260501, z: -.002412125}
+  m_Size: {x: 1.00099194, y: 1.50000036, z: .0500000119}
+  m_Center: {x: .000495970249, y: 0, z: .025000006}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -96,5 +82,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 101284}
+  m_RootGameObject: {fileID: 197328}
   m_IsPrefabParent: 1

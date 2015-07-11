@@ -7,8 +7,8 @@ public class Salchicha : MonoBehaviour
 	public Rigidbody rigidBodyDerecha;
 	public Rigidbody rigidBodyIzquierda;
     public static Salchicha playerRef;
-    public ArrayList listaSucia;
-	const float fuerza = 200;
+	public List<Toxico> listaSucia = new List<Toxico>();
+	const float fuerza = 250;
 
 	const float toxicidadMaxima = 100; 
 	public float toxicidadActual = 0;
@@ -16,11 +16,21 @@ public class Salchicha : MonoBehaviour
 	public Slider sliderToxicidad;
 
 	public Renderer rendererSalchicha;
+	public SkinnedMeshRenderer meshRenderer;
+
+	public Texture spriteWASD;
+	public Texture spriteFlechas;
+
+	public Transform centroTextoL;
+	public Transform centroTextoR;
+
+	private bool isCortado = false;
+	public Mesh meshCortado;
+	public CharacterJoint juntaACortar;
 
     void Awake()
     {
         playerRef = this;
-        listaSucia = new ArrayList();
     }
 
 	void Update () 
@@ -30,8 +40,7 @@ public class Salchicha : MonoBehaviour
 
 		if(rigidBodyDerecha.transform.position.y < -10)
 		{
-			Bandeja.bandejaRef.Respawn();
-			DestroyImmediate(gameObject);
+			Kill();
 		}
 	}
 
@@ -75,7 +84,50 @@ public class Salchicha : MonoBehaviour
 
     public void RemoveRandomShit()
     {
-        if(listaSucia.Capacity>0)
-            listaSucia.RemoveAt(Random.Range(0, listaSucia.Capacity));
-    }
+		int randomIndex = Random.Range(0, listaSucia.Count);
+        
+		if(listaSucia.Count>0)
+		{
+			if(listaSucia[randomIndex] != null)
+			{
+				toxicidadActual -= listaSucia[randomIndex].toxicidad;
+				Destroy(listaSucia[randomIndex].gameObject); 
+			}
+			listaSucia.RemoveAt(randomIndex);
+    	}
+	}
+
+	public void OnGUI()
+	{
+		float scale = Screen.width / 600;
+		Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
+		GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
+	
+		position = Camera.main.WorldToScreenPoint(centroTextoR.position);
+		GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+	}
+
+	public void Cortar ()
+	{
+		if(!isCortado)
+		{
+			meshRenderer.sharedMesh = meshCortado;
+			Destroy (juntaACortar);
+			isCortado = true;
+			StartCoroutine(corutinaRespawn(1.5f));
+		}
+	}
+
+	public void Kill()
+	{
+		Bandeja.bandejaRef.Respawn();
+		DestroyImmediate(gameObject);
+	}
+
+	public IEnumerator corutinaRespawn(float tiempo)
+	{
+		yield return new WaitForSeconds(tiempo);
+
+		Kill();
+	}
 }

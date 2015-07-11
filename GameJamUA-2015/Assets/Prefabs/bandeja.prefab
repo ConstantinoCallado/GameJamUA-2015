@@ -395,6 +395,7 @@ MonoBehaviour:
   - {fileID: 149646}
   - {fileID: 198486}
   - {fileID: 104818}
+  prefabJugador: {fileID: 107536, guid: 0a128c259e314fc4ea125e1e1136ecf7, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

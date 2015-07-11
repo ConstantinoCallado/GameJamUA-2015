@@ -24,9 +24,8 @@ public class Bandeja : MonoBehaviour
 	{
 		if(listaSalchichas.Count > 0)
 		{
-			Destroy(listaSalchichas[listaSalchichas.Count-1]);
-
 			GameObject.Instantiate(prefabJugador, listaSalchichas[listaSalchichas.Count-1].transform.position, Quaternion.identity); 
+			Destroy(listaSalchichas[listaSalchichas.Count-1]);
 
 			listaSalchichas.RemoveAt(listaSalchichas.Count-1);
 

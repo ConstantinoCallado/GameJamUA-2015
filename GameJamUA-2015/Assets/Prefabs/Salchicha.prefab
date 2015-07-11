@@ -32,6 +32,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &110834
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413732}
+  m_Layer: 0
+  m_Name: CentroTextoL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &114358
 GameObject:
   m_ObjectHideFlags: 1
@@ -44,6 +59,21 @@ GameObject:
   - 114: {fileID: 11456790}
   m_Layer: 5
   m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &119820
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499602}
+  m_Layer: 0
+  m_Name: CentroTextoR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,13 +307,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0309999995, y: .699999988, z: 3.30699992}
+  m_LocalPosition: {x: .0441085771, y: .0599993914, z: -7.80749559}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children:
   - {fileID: 447058}
   - {fileID: 428176}
   - {fileID: 449792}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &413732
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486990}
   m_RootOrder: 0
 --- !u!4 &428176
 Transform:
@@ -319,8 +361,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152610}
-  m_LocalRotation: {x: -.430458874, y: -.560986459, z: .430460542, w: -.560984015}
-  m_LocalPosition: {x: -10.1899996, y: 33, z: -33.0699997}
+  m_LocalRotation: {x: .415626973, y: .572061479, z: -.415627033, w: .57206136}
+  m_LocalPosition: {x: -17.6000004, y: 36.2999992, z: 26.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 22409256}
@@ -347,7 +389,8 @@ Transform:
   m_LocalRotation: {x: .707106829, y: 0, z: -0, w: .707106709}
   m_LocalPosition: {x: -4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 499602}
   m_Father: {fileID: 447058}
   m_RootOrder: 2
 --- !u!4 &486990
@@ -359,7 +402,8 @@ Transform:
   m_LocalRotation: {x: .707106829, y: 0, z: -0, w: .707106709}
   m_LocalPosition: {x: 4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 413732}
   m_Father: {fileID: 447058}
   m_RootOrder: 0
 --- !u!4 &495266
@@ -374,6 +418,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 447058}
   m_RootOrder: 3
+--- !u!4 &499602
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 481464}
+  m_RootOrder: 0
 --- !u!20 &2074384
 Camera:
   m_ObjectHideFlags: 1
@@ -610,9 +666,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidBodyDerecha: {fileID: 5486654}
   rigidBodyIzquierda: {fileID: 5436508}
+  listaSucia: []
   toxicidadActual: 0
   sliderToxicidad: {fileID: 11415284}
   rendererSalchicha: {fileID: 13744304}
+  meshRenderer: {fileID: 13744304}
+  spriteWASD: {fileID: 2800000, guid: 11318ad9adf4bc748a834544affd132f, type: 3}
+  spriteFlechas: {fileID: 2800000, guid: cadb048c2c76e134aac1a915d358f5f3, type: 3}
+  centroTextoL: {fileID: 413732}
+  centroTextoR: {fileID: 499602}
+  meshCortado: {fileID: 4300000, guid: 3fb14fc45f5a14e4b92b0f3914f035ef, type: 3}
+  juntaACortar: {fileID: 14488510}
 --- !u!114 &11485612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -789,7 +853,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.79999995, y: 0, z: -0}
+  m_ConnectedAnchor: {x: -2.79999971, y: 0, z: -0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -873,7 +937,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -3.4000001, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -3.39999962, y: 0, z: 0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
