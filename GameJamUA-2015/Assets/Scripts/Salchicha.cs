@@ -52,6 +52,11 @@ public class Salchicha : MonoBehaviour
 
 	void Update () 
 	{
+		if(Input.GetKey(KeyCode.Escape))
+		{
+			Application.LoadLevel(0);
+		}
+
 		sliderToxicidad.value = toxicidadActual / toxicidadMaxima;
 
         if(!isElectrocutado)
