@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
             Application.LoadLevel(nivelActual + 1);
         else
         {
-            //Finalizar juego
+			//TODO: COMPLETAR JUEGO
         }
     }
 

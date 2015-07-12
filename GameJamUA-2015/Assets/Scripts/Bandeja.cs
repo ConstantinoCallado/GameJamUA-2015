@@ -32,7 +32,7 @@ public class Bandeja : MonoBehaviour
 		}
 		else
 		{
-			Application.Quit();
+			Application.LoadLevel("NivelMorir");
 		}
 	}
 }

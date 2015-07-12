@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Escena3.unity
   - enabled: 1
     path: Assets/Scenes/Escena4.unity
+  - enabled: 1
+    path: Assets/Scenes/NivelMorir.unity

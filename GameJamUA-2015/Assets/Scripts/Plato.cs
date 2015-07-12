@@ -77,7 +77,6 @@ public class Plato : MonoBehaviour
 	public void CerrarResultados()
 	{
 		StartCoroutine(fadeAndLoad());
-
 	}
 
 	public IEnumerator fadeAndLoad()
