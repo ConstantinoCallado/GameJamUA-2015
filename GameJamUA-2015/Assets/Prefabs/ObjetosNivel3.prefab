@@ -1509,7 +1509,7 @@ Transform:
   m_GameObject: {fileID: 130416}
   m_LocalRotation: {x: -.0468363389, y: -8.84669671e-09, z: -7.3833708e-09, w: .998902619}
   m_LocalPosition: {x: -0, y: .0170000009, z: -1.97500002}
-  m_LocalScale: {x: 1.1643858, y: .0316723287, z: 3.95010567}
+  m_LocalScale: {x: 1.45318723, y: .0316723287, z: 3.95010567}
   m_Children: []
   m_Father: {fileID: 444162}
   m_RootOrder: 0
@@ -1519,7 +1519,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153244}
-  m_LocalRotation: {x: -.0377456583, y: .706098676, z: .706098557, w: .0377457663}
+  m_LocalRotation: {x: -.037745662, y: .706098735, z: .706098616, w: .0377457701}
   m_LocalPosition: {x: -.449999988, y: .0799999982, z: -11.8100004}
   m_LocalScale: {x: .126497954, y: .126498103, z: .126498103}
   m_Children:
@@ -3167,7 +3167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 1
   collider: {fileID: 13561764}
 --- !u!114 &11423040
 MonoBehaviour:
@@ -3180,7 +3180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6f6422aa6317d4cafe937f1f5fa42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 50
+  toxicidad: 7
   collider: {fileID: 13690148}
   colorPlutonio: {r: .433941901, g: .654901981, b: .282352954, a: 1}
   luzPlutonio: {fileID: 10863698}
@@ -3221,7 +3221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 2
   collider: {fileID: 13583026}
 --- !u!114 &11457714
 MonoBehaviour:
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 2
   collider: {fileID: 13529268}
 --- !u!114 &11460554
 MonoBehaviour:
@@ -3284,7 +3284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 5
   collider: {fileID: 13568584}
 --- !u!114 &11478928
 MonoBehaviour:
@@ -3309,7 +3309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 2
   collider: {fileID: 13529482}
 --- !u!114 &11480948
 MonoBehaviour:
@@ -3322,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 2
   collider: {fileID: 13546392}
 --- !u!114 &11484394
 MonoBehaviour:
@@ -3347,7 +3347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2896ab13d1454aaa469525f139682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 5
+  toxicidad: 4
   collider: {fileID: 6577100}
 --- !u!114 &11488842
 MonoBehaviour:
@@ -3360,7 +3360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaecce2cb1a4589458bd22f7ea5afb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 15
+  toxicidad: 4
   collider: {fileID: 13535668}
 --- !u!114 &11492456
 MonoBehaviour:
@@ -3385,7 +3385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 2
   collider: {fileID: 13590476}
 --- !u!135 &13529268
 SphereCollider:

@@ -34,7 +34,7 @@ public class FireBehaviour : MonoBehaviour {
                     fogones[i].Play();
                 else fogones[i].Stop();
             }
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1.2f);
         }
     }
 }
