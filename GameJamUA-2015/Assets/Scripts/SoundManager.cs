@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
 	public AudioSource audioRodar;
 	public AudioSource audioCoger;
 	public AudioSource audioAplausos;
+    public AudioSource audioCoin;
 
 	public void Awake()
 	{
