@@ -24,9 +24,15 @@ public class Plato : MonoBehaviour
 	{
 		if(other.tag == "Salchicha")
 		{
-			collider.enabled = false;
-
-			StartCoroutine(corutinaFinal());
+            if(Salchicha.playerRef.toxicidadActual >= (LevelManager.GetToxicidad() * 0.65f))
+		    {
+                collider.enabled = false;
+			    StartCoroutine(corutinaFinal());
+            }else
+		    {
+			    Debug.Log("Toxicidad NO alcanzada!");
+		    }
+			
 		}
 	}
 
@@ -35,8 +41,7 @@ public class Plato : MonoBehaviour
 		yield return new WaitForSeconds(0.5f);
 
 
-		if(Salchicha.playerRef.toxicidadActual >= (LevelManager.GetToxicidad() * 0.65f))
-		{
+		
 			gameObjectCocinero.SetActive(true);
 			gameObjectCocinero.transform.parent = null;
 			Salchicha.playerRef.showUI = false;
@@ -67,11 +72,6 @@ public class Plato : MonoBehaviour
 			UIFelicidades.SetActive(true);
 
 			Debug.Log("Toxicidad alcanzada!");
-		}
-		else
-		{
-			Debug.Log("Toxicidad NO alcanzada!");
-		}
    	}
 
 	public void CerrarResultados()
