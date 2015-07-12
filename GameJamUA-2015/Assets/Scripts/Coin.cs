@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour {
     {
         if (other.transform.tag == "Salchicha")
         {
-            
+			SoundManager.soundManagerRef.audioCoin.Play();
             switch (Application.loadedLevel)
             {
                 case 1: PlayerPrefs.SetInt("C1", 1);
