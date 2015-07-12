@@ -115,6 +115,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497688}
   - 95: {fileID: 9521858}
+  - 65: {fileID: 6588854}
   m_Layer: 0
   m_Name: limpieza
   m_TagString: Untagged
@@ -1977,6 +1978,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .74000001, y: .75999999, z: .100000001}
   m_Center: {x: .0352009982, y: -.0136882551, z: -.299147457}
+--- !u!65 &6588854
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.60000002, z: 2.4000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6591396
 BoxCollider:
   m_ObjectHideFlags: 1

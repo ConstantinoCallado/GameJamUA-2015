@@ -4017,7 +4017,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 54e4992768d05154f9b4c38e78c357c7, type: 2}
+  - {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8897,6 +8897,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2321558, guid: 3ab07e0ce49dd464f9367e57c0517583, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
+    - target: {fileID: 2340960, guid: 3ab07e0ce49dd464f9367e57c0517583, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab07e0ce49dd464f9367e57c0517583, type: 2}
   m_IsPrefabParent: 0
@@ -8943,6 +8951,14 @@ Prefab:
       propertyPath: m_Name
       value: encimera sola 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2370792, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
+    - target: {fileID: 2307742, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
   m_IsPrefabParent: 0
@@ -8989,6 +9005,14 @@ Prefab:
       propertyPath: m_Name
       value: encimera sola 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2370792, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
+    - target: {fileID: 2307742, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
   m_IsPrefabParent: 0
@@ -9093,6 +9117,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2370792, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
+    - target: {fileID: 2307742, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
   m_IsPrefabParent: 0
@@ -9188,7 +9220,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 446372, guid: be55cf60943a2d84c8721c7222899e4d, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6588690, guid: be55cf60943a2d84c8721c7222899e4d, type: 2}
       propertyPath: m_Size.x
@@ -11589,6 +11621,14 @@ Prefab:
       propertyPath: m_Name
       value: encimera sola 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2370792, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
+    - target: {fileID: 2307742, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1471c72a2286774a924f5b1d18e372d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
   m_IsPrefabParent: 0
@@ -11649,7 +11689,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 538041cfc40bc6e48af4993177d599e1, type: 2}
+  - {fileID: 2100000, guid: 67963851fd4a404478a54a241afa047c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
