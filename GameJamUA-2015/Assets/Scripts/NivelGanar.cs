@@ -15,7 +15,7 @@ public class NivelGanar : MonoBehaviour
 	{
 		if(Time.time > tiempoInicial && Input.anyKey)
 		{
-			Application.Quit();
+			Application.LoadLevel(0);
 		}
 	}
 }
