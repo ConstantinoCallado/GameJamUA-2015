@@ -9,8 +9,7 @@ public class Salchicha : MonoBehaviour
     public static Salchicha playerRef;
 	public List<Toxico> listaSucia = new List<Toxico>();
 	const float fuerza = 200;
-
-	const float toxicidadMaxima = 100; 
+	
 	public float toxicidadActual = 0;
 
 	public Slider sliderToxicidad;
@@ -35,6 +34,7 @@ public class Salchicha : MonoBehaviour
 
 	public bool respawning = false;
 
+	private float toxicidadMaxima;
 
 	public bool showUI = true;
 
@@ -44,9 +44,16 @@ public class Salchicha : MonoBehaviour
         playerRef = this;
     }
 
+	void Start()
+	{
+		toxicidadMaxima = LevelManager.GetToxicidad();
+	}
+
+
 	void Update () 
 	{
 		sliderToxicidad.value = toxicidadActual / toxicidadMaxima;
+
         if(!isElectrocutado)
 		    checkUserInput();
 
@@ -207,6 +214,12 @@ public class Salchicha : MonoBehaviour
             mat.color = Color.Lerp(mat.color, Color.black, Time.deltaTime * 2f);
             yield return new WaitForEndOfFrame();
         }
-
     }
+
+	public void Freeze(Transform parent)
+	{
+		transform.parent = parent;
+		rigidBodyDerecha.isKinematic = true;
+		rigidBodyIzquierda.isKinematic = true;
+	}
 }

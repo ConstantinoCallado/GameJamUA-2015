@@ -703,7 +703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -23.7000008
+      value: -23.9909992
       objectReference: {fileID: 0}
     - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -725,30 +725,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.60000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.60000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 431160, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.60000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2301354, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9301257c587b4a94db94372237640d27, type: 2}
-    - target: {fileID: 2342880, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 374b5012c20ca8c41b618d990e8b216f, type: 2}
-    - target: {fileID: 2323758, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 374b5012c20ca8c41b618d990e8b216f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c1cf4ebcbf29a04e842df1a145de2f3, type: 2}
   m_IsPrefabParent: 0
@@ -779,7 +755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6046fdb8f17a941a1af089409347bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidades: 0a0000000a0000000a0000000a000000
 --- !u!4 &1337480153
 Transform:
   m_ObjectHideFlags: 0
@@ -903,7 +878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460960, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 197328, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_Name
@@ -1097,7 +1072,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460960, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 197328, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_Name

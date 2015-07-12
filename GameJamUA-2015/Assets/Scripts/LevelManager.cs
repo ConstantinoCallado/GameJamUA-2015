@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour 
 {
-	public int[] toxicidades = {10, 10, 10, 10};
+	public static int[] toxicidades = {17, 16, 10, 10};
 
     public static void LoadLevel()
     {
@@ -16,4 +16,9 @@ public class LevelManager : MonoBehaviour
             //Finalizar juego
         }
     }
+
+	public static int GetToxicidad()
+	{
+		return toxicidades[Application.loadedLevel-1];
+	}
 }
