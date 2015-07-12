@@ -221,11 +221,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 211
+      value: 223.5
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: 104.5
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_SizeDelta.x
@@ -253,11 +253,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.x
-      value: 3.26078224
+      value: 3.42350316
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.y
-      value: 2.00836658
+      value: 2.11618304
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.z
@@ -355,6 +355,7 @@ GameObject:
   - 114: {fileID: 505094501}
   - 114: {fileID: 505094500}
   - 114: {fileID: 505094504}
+  - 114: {fileID: 505094505}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -447,6 +448,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8207310d13cc94bbf99ab96a544845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &505094505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505094499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 1
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!224 &656133292 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186,
@@ -819,11 +841,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1.79999995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -17.3999996
+      value: -16.7000008
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_SizeDelta.x
@@ -851,15 +873,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.x
-      value: .746131182
+      value: .861385882
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.21141768
+      value: 1.39854491
       objectReference: {fileID: 0}
     - target: {fileID: 22424240, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.15446961
       objectReference: {fileID: 0}
     - target: {fileID: 11482940, guid: 29ea040cfa6225546a122fd1855d9186, type: 2}
       propertyPath: m_Color.r

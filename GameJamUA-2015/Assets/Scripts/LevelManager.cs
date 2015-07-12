@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     {
         int nivelActual = Application.loadedLevel;
 
-        if (nivelActual < 3)
+        if (nivelActual < 4)
             Application.LoadLevel(nivelActual + 1);
         else
         {
