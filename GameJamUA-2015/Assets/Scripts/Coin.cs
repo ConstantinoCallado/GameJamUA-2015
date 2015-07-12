@@ -5,8 +5,6 @@ public class Coin : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        
-
         if (other.transform.tag == "Salchicha")
         {
             switch (Application.loadedLevel)
@@ -21,7 +19,7 @@ public class Coin : MonoBehaviour {
                     break;
 
             }
-            Destroy(gameObject);
+			transform.parent = other.transform;
         }
     }
 }
