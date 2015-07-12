@@ -2180,7 +2180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad441550d04b284c8e253720400da88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 10
+  toxicidad: 1
   collider: {fileID: 13532986}
 --- !u!114 &11429186
 MonoBehaviour:
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2896ab13d1454aaa469525f139682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 5
+  toxicidad: 4
   collider: {fileID: 6599640}
 --- !u!114 &11435996
 MonoBehaviour:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2896ab13d1454aaa469525f139682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 4
+  toxicidad: 5
   collider: {fileID: 6595518}
 --- !u!114 &11464182
 MonoBehaviour:
