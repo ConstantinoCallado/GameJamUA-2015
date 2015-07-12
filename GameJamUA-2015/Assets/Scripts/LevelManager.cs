@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour 
 {
-	public static int[] toxicidades = {17, 16, 10, 10};
+	public static int[] toxicidades = {17, 16, 10, 100};
 
     public static void LoadLevel()
     {
