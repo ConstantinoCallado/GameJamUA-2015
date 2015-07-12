@@ -9,8 +9,7 @@ public class Salchicha : MonoBehaviour
     public static Salchicha playerRef;
 	public List<Toxico> listaSucia = new List<Toxico>();
 	const float fuerza = 200;
-
-	const float toxicidadMaxima = 100; 
+	
 	public float toxicidadActual = 0;
 
 	public Slider sliderToxicidad;
@@ -35,6 +34,7 @@ public class Salchicha : MonoBehaviour
 
 	public bool respawning = false;
 
+	private float toxicidadMaxima;
 
 	public bool showUI = true;
 
@@ -44,9 +44,16 @@ public class Salchicha : MonoBehaviour
         playerRef = this;
     }
 
+	void Start()
+	{
+		toxicidadMaxima = LevelManager.GetToxicidad();
+	}
+
+
 	void Update () 
 	{
 		sliderToxicidad.value = toxicidadActual / toxicidadMaxima;
+
         if(!isElectrocutado)
 		    checkUserInput();
 
@@ -116,12 +123,16 @@ public class Salchicha : MonoBehaviour
 	{
 		if(showUI)
 		{
-			float scale = Screen.height / 800;
+			double scale = Screen.height / 1000.0;
+		
 			Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
-			GUI.DrawTexture(new Rect(position.x - (scale * spriteWASD.width / 2) , Screen.height - (position.y + (scale * spriteWASD.height /2)), scale * spriteWASD.width, scale * spriteWASD.height), spriteWASD);
+			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteWASD.width / 2)), 
+			                         (float)(Screen.height - (position.y + (scale * spriteWASD.height /2))), (float)(scale * spriteWASD.width), 
+
+			                         (float)(scale * spriteWASD.height)), spriteWASD);
 		
 			position = Camera.main.WorldToScreenPoint(centroTextoR.position);
-			GUI.DrawTexture(new Rect(position.x - (scale * spriteFlechas.width / 2), Screen.height - (position.y + (scale * spriteFlechas.height / 2)), scale * spriteFlechas.width, scale * spriteFlechas.height), spriteFlechas);
+			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteFlechas.width / 2)), (float)(Screen.height - (position.y + (scale * spriteFlechas.height / 2))), (float) (scale * spriteFlechas.width), (float)(scale * spriteFlechas.height)), spriteFlechas);
 		}
 	}
 
@@ -203,6 +214,12 @@ public class Salchicha : MonoBehaviour
             mat.color = Color.Lerp(mat.color, Color.black, Time.deltaTime * 2f);
             yield return new WaitForEndOfFrame();
         }
-
     }
+
+	public void Freeze(Transform parent)
+	{
+		transform.parent = parent;
+		rigidBodyDerecha.isKinematic = true;
+		rigidBodyIzquierda.isKinematic = true;
+	}
 }

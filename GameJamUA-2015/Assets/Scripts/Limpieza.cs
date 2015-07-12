@@ -4,6 +4,7 @@ using System.Collections;
 public class Limpieza : MonoBehaviour 
 {
 	float coolDown = 0;
+	public float cantidad = 1;
 
 	public void OnTriggerEnter(Collider other)
 	{
@@ -11,7 +12,10 @@ public class Limpieza : MonoBehaviour
 		{
 			if(Time.time > coolDown)
 			{
-				Salchicha.playerRef.RemoveRandomShit();
+				for(int i=0; i<cantidad; i++)
+				{
+					Salchicha.playerRef.RemoveRandomShit();
+				}
 				coolDown = Time.time + 2;
 			}
 		}

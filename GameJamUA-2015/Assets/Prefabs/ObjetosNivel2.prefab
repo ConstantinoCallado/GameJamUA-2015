@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaecce2cb1a4589458bd22f7ea5afb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 15
+  toxicidad: 4
   collider: {fileID: 13550864}
 --- !u!114 &11433002
 MonoBehaviour:
@@ -2116,7 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaecce2cb1a4589458bd22f7ea5afb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 15
+  toxicidad: 4
   collider: {fileID: 13565460}
 --- !u!114 &11436716
 MonoBehaviour:
@@ -2129,6 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ef220459e6bc2459418ecbfcd4e83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidad: 1
 --- !u!114 &11438728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2163,7 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2896ab13d1454aaa469525f139682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 5
+  toxicidad: 4
   collider: {fileID: 6595518}
 --- !u!114 &11464182
 MonoBehaviour:
@@ -2202,6 +2203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ef220459e6bc2459418ecbfcd4e83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidad: 1
 --- !u!114 &11484428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2213,7 +2215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2896ab13d1454aaa469525f139682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toxicidad: 5
+  toxicidad: 4
   collider: {fileID: 6540034}
 --- !u!114 &11488516
 MonoBehaviour:
