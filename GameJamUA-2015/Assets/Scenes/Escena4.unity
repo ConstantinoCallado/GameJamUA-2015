@@ -674,7 +674,7 @@ Transform:
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!1 &520587117
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +787,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1001 &618001181
 Prefab:
   m_ObjectHideFlags: 0
@@ -1324,6 +1324,10 @@ Prefab:
       propertyPath: m_Name
       value: Cocinero 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11419958, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
+      propertyPath: cantidadGiro
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
   m_IsPrefabParent: 0
@@ -1611,6 +1615,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 11419958, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
+      propertyPath: cantidadGiro
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43f2882c5ce84694f99a9baa22020e8c, type: 2}
   m_IsPrefabParent: 0
@@ -1696,7 +1704,7 @@ Transform:
   - {fileID: 707323512}
   - {fileID: 6129877}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1248556600
 MonoBehaviour:
   m_ObjectHideFlags: 0

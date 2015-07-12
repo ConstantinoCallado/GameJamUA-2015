@@ -331,7 +331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431816, guid: 3ab07e0ce49dd464f9367e57c0517583, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2321794, guid: 3ab07e0ce49dd464f9367e57c0517583, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -458,7 +458,7 @@ Transform:
   - {fileID: 707323512}
   - {fileID: 6129877}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &1248556600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +924,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460960, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 197328, guid: 74193e87e159be949891177d22e3e7e5, type: 2}
       propertyPath: m_Name
@@ -1034,7 +1034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1001 &2004326715
 Prefab:
   m_ObjectHideFlags: 0
