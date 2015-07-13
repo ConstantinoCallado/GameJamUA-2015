@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Salchicha
   - Encimera
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - Player
   - Centinela
-  - 
-  - 
+  - Scenario
+  - Items
   - 
   - 
   - 

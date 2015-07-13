@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446372}
-  - 65: {fileID: 6588690}
-  - 114: {fileID: 11462250}
-  m_Layer: 0
+  - 135: {fileID: 13583744}
+  - 114: {fileID: 11414956}
+  m_Layer: 11
   m_Name: ultracoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 499046}
   - 33: {fileID: 3326996}
   - 23: {fileID: 2383316}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,8 +40,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118236}
-  m_LocalRotation: {x: .485562652, y: -.515022218, z: .513973773, w: .48457405}
-  m_LocalPosition: {x: .193000004, y: .291999996, z: -21.8010006}
+  m_LocalRotation: {x: .506401896, y: -.513842165, z: .486070871, w: .493212491}
+  m_LocalPosition: {x: 1.18200004, y: .275999993, z: -4.00600004}
   m_LocalScale: {x: .300000012, y: .300000012, z: .300000012}
   m_Children:
   - {fileID: 499046}
@@ -90,19 +90,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194806}
   m_Mesh: {fileID: 4300002, guid: 12b425e0aace5df4eb98066b53559a9d, type: 3}
---- !u!65 &6588690
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118236}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .400000006, y: .100000001, z: .400000006}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11462250
+--- !u!114 &11414956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,6 +101,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6094c6b1b8086f4482e8b7e707d21c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &13583744
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .150000006
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

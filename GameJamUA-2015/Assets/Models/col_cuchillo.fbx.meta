@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7da12465e40b2db428de1e104654b6e2
-timeCreated: 1436568287
+guid: 9b495d64e4f2e29409af36e57d0eb746
+timeCreated: 1436817802
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: BezierCurve
-    4300002: BezierCurve.002
+    4300000: Cuchillo_coll
   materials:
     importMaterials: 1
     materialName: 0

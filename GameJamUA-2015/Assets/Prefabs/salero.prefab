@@ -10,7 +10,8 @@ GameObject:
   - 4: {fileID: 419456}
   - 33: {fileID: 3311218}
   - 23: {fileID: 2328806}
-  m_Layer: 0
+  - 135: {fileID: 13527882}
+  m_Layer: 10
   m_Name: Cylinder002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +45,8 @@ GameObject:
   - 4: {fileID: 442992}
   - 33: {fileID: 3396648}
   - 23: {fileID: 2321916}
-  m_Layer: 0
+  - 136: {fileID: 13695152}
+  m_Layer: 10
   m_Name: Cylinder001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,8 +111,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186652}
-  m_LocalRotation: {x: -.00937172677, y: -.663214028, z: .00830582902, w: .748325109}
-  m_LocalPosition: {x: .800000012, y: .134000003, z: -1.65199995}
+  m_LocalRotation: {x: -.00776666729, y: -.521421611, z: .00982318446, w: .85320735}
+  m_LocalPosition: {x: .82099998, y: .134000003, z: -2.50099993}
   m_LocalScale: {x: .189402625, y: .189402655, z: .189402655}
   m_Children:
   - {fileID: 442992}
@@ -228,6 +230,31 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!135 &13527882
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .899999976
+  m_Center: {x: 1.90780816e-06, y: -1.90780816e-06, z: .246764928}
+--- !u!136 &13695152
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .699999988
+  m_Height: 2.5
+  m_Direction: 2
+  m_Center: {x: 6.59461747e-08, y: -5.96046448e-08, z: 1.10639238}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

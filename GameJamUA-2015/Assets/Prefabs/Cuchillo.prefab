@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 441090}
   - 33: {fileID: 3325802}
   - 23: {fileID: 2345446}
-  - 64: {fileID: 6496810}
   - 114: {fileID: 11432112}
+  - 64: {fileID: 6496810}
   m_Layer: 0
   m_Name: Cuchillo
   m_TagString: Untagged
@@ -19,16 +19,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &164512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 428562}
+  - 136: {fileID: 13623402}
+  m_Layer: 11
+  m_Name: Mango
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428562
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441090}
+  m_RootOrder: 0
 --- !u!4 &441090
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143290}
-  m_LocalRotation: {x: .630912006, y: .319296151, z: -.319296271, w: .630911946}
-  m_LocalPosition: {x: .331999987, y: .307000011, z: -3.72099996}
+  m_LocalRotation: {x: .414437592, y: .57292372, z: -.57292372, w: .414437473}
+  m_LocalPosition: {x: -1.06400001, y: .356999993, z: -5.78700018}
   m_LocalScale: {x: .5, y: .5, z: .5}
-  m_Children: []
+  m_Children:
+  - {fileID: 428562}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2345446
@@ -73,7 +102,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 3c36fc9c39af8a044ba8edad93ab8255, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 9b495d64e4f2e29409af36e57d0eb746, type: 3}
 --- !u!114 &11432112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6225122cbccb224ea43bf5e13482d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &13623402
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .100000001
+  m_Height: 2
+  m_Direction: 0
+  m_Center: {x: .670000017, y: 0, z: .340000004}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

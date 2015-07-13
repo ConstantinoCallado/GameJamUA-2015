@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7da12465e40b2db428de1e104654b6e2
-timeCreated: 1436568287
+guid: f8dec16791f3d024ebfd9e8089c8460a
+timeCreated: 1436808067
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -10,7 +10,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: BezierCurve
-    4300002: BezierCurve.002
+    4300002: Circle
   materials:
     importMaterials: 1
     materialName: 0

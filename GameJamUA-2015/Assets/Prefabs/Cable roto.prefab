@@ -26,8 +26,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 430472}
   - 95: {fileID: 9577792}
-  - 65: {fileID: 6587542}
   - 114: {fileID: 11495732}
+  - 135: {fileID: 13553428}
   m_Layer: 0
   m_Name: Cable roto
   m_TagString: Untagged
@@ -149,8 +149,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115558}
   m_LocalRotation: {x: 0, y: .338805944, z: 0, w: .940856338}
-  m_LocalPosition: {x: -.949999988, y: .141000003, z: -3.44000006}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.0909999982, y: .215000004, z: -20.2709999}
+  m_LocalScale: {x: .611518085, y: .611518025, z: .611518085}
   m_Children:
   - {fileID: 410124}
   - {fileID: 422704}
@@ -301,18 +301,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134904}
   m_Mesh: {fileID: 4300002, guid: 5e16e9be7a751214f818c5cfcbb7736e, type: 3}
---- !u!65 &6587542
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115558}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .5, y: .25, z: .5}
-  m_Center: {x: 0, y: .00999999978, z: -.5}
 --- !u!95 &9577792
 Animator:
   serializedVersion: 3
@@ -341,6 +329,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d8bfe155e5ea848bb2f89a027ac016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &13553428
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .400000006
+  m_Center: {x: -.170000002, y: 0, z: -.389999986}
 --- !u!198 &19822448
 ParticleSystem:
   m_ObjectHideFlags: 1
