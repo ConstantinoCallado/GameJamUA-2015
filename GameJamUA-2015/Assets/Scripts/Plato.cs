@@ -44,7 +44,7 @@ public class Plato : MonoBehaviour
 		
 			gameObjectCocinero.SetActive(true);
 			gameObjectCocinero.transform.parent = null;
-			Salchicha.playerRef.showUI = false;
+			Salchicha.showUI = false;
 			Salchicha.playerRef.Freeze(transform);
 
 			while((anchorPointCocinero.position - gameObjectCocinero.transform.position).magnitude > 0.1f)

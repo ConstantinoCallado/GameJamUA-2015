@@ -436,7 +436,7 @@ Transform:
   m_GameObject: {fileID: 107536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.0299999993, y: .699999988, z: -.310000002}
-  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 449792}
   - {fileID: 447058}
@@ -450,7 +450,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalPosition: {x: 4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 486990}
@@ -543,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 180396}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106709}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
   m_Children:
   - {fileID: 486990}
   - {fileID: 472582}
@@ -569,9 +569,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152610}
-  m_LocalRotation: {x: .415626973, y: .572061479, z: -.415627033, w: .57206136}
-  m_LocalPosition: {x: -22, y: 45.375, z: 33.125}
-  m_LocalScale: {x: 12.500001, y: 12.499999, z: 12.499999}
+  m_LocalRotation: {x: -1.33799688e-07, y: .821256578, z: -.570559144, w: -9.29559221e-08}
+  m_LocalPosition: {x: 0, y: 2.16000009, z: .289999992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22409256}
   - {fileID: 413858}
@@ -719,7 +719,7 @@ Rigidbody:
   m_AngularDrag: .100000001
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!54 &5458024
@@ -730,11 +730,11 @@ Rigidbody:
   m_GameObject: {fileID: 141996}
   serializedVersion: 2
   m_Mass: .100000001
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Drag: .00999999978
+  m_AngularDrag: .00999999978
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!54 &5466486
@@ -745,11 +745,11 @@ Rigidbody:
   m_GameObject: {fileID: 167864}
   serializedVersion: 2
   m_Mass: .100000001
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Drag: .00999999978
+  m_AngularDrag: .00999999978
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!54 &5486654
@@ -764,7 +764,7 @@ Rigidbody:
   m_AngularDrag: .100000001
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!81 &8171770
@@ -1490,6 +1490,8 @@ MonoBehaviour:
   salchichaElec: {fileID: 4300000, guid: 405782eabf9e18f4a9a0ebbfadcbd2fc, type: 3}
   spriteWASD: {fileID: 2800000, guid: 11318ad9adf4bc748a834544affd132f, type: 3}
   spriteFlechas: {fileID: 2800000, guid: cadb048c2c76e134aac1a915d358f5f3, type: 3}
+  spriteJoystickL: {fileID: 2800000, guid: 820128caba310c04cb14bc2d4df848d2, type: 3}
+  spriteJoystickD: {fileID: 2800000, guid: 99560758225ea0043ac5c47f7fb5b8dc, type: 3}
   materialElec: {fileID: 2100000, guid: 096290b743f332e4cb6bc948b6969dc5, type: 2}
   centroTextoL: {fileID: 413732}
   centroTextoR: {fileID: 499602}
@@ -1497,7 +1499,6 @@ MonoBehaviour:
   juntaACortar1: {fileID: 14498666}
   juntaACortar2: {fileID: 14405824}
   respawning: 0
-  showUI: 1
 --- !u!114 &11488446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1943,7 +1944,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 140, y: 0}
+  m_AnchoredPosition: {x: -140, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22497264
@@ -1961,9 +1962,9 @@ RectTransform:
   - {fileID: 22413778}
   m_Father: {fileID: 22409256}
   m_RootOrder: 0
-  m_AnchorMin: {x: 1, y: .5}
-  m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: -922, y: 242}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -58}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0, y: .5}
 --- !u!1001 &100100000

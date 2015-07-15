@@ -2,6 +2,10 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+
+using UnityStandardAssets.CrossPlatformInput;
+
+
 public class Salchicha : MonoBehaviour 
 {
 	public Rigidbody rigidBodyDerecha;
@@ -17,9 +21,15 @@ public class Salchicha : MonoBehaviour
 	public Renderer rendererSalchicha;
 	public SkinnedMeshRenderer meshRenderer;
     public Mesh salchichaElec;
+
 	public Texture spriteWASD;
 	public Texture spriteFlechas;
-    public Material materialElec;
+    
+	public Texture spriteJoystickL;
+	public Texture spriteJoystickD;
+
+
+	public Material materialElec;
 
 	public Transform centroTextoL;
 	public Transform centroTextoR;
@@ -34,9 +44,11 @@ public class Salchicha : MonoBehaviour
 
 	public bool respawning = false;
 
-	private float toxicidadMaxima;
+	private static float toxicidadMaxima;
 
-	public bool showUI = true;
+	public static bool showUI = true;
+
+	public static Vector2 vectorEntradaUsuario;
 
     void Awake()
     {
@@ -68,41 +80,57 @@ public class Salchicha : MonoBehaviour
 		}
 	}
 
+
 	private void checkUserInput()
 	{
-		if(Input.GetKey(KeyCode.A))
-		{
-			rigidBodyIzquierda.AddForce(new Vector3(0, 0, fuerza * Time.deltaTime));
-		}
-		else if(Input.GetKey(KeyCode.D))
-		{
-			rigidBodyIzquierda.AddForce(new Vector3(0, 0, -fuerza * Time.deltaTime));
-		}
-		if(Input.GetKey(KeyCode.W))
-		{
-			rigidBodyIzquierda.AddForce(new Vector3(fuerza * Time.deltaTime, 0, 0));
-		}
-		else if(Input.GetKey(KeyCode.S))
-		{
-			rigidBodyIzquierda.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
-		}
+
+		#if UNITY_ANDROID || UNITY_IOS || UNITY_WP8 || UNITY_WP8_1
+
+		vectorEntradaUsuario = new Vector2(CrossPlatformInputManager.GetAxis("HorizontalL"), CrossPlatformInputManager.GetAxis("VerticalL"));
+		rigidBodyIzquierda.AddForce(new Vector3(-vectorEntradaUsuario.x, 0, -vectorEntradaUsuario.y) * fuerza * Time.deltaTime);
+
+	
+		vectorEntradaUsuario = new Vector2(CrossPlatformInputManager.GetAxis("HorizontalR"), CrossPlatformInputManager.GetAxis("VerticalR"));
+		rigidBodyDerecha.AddForce(new Vector3(-vectorEntradaUsuario.x, 0, -vectorEntradaUsuario.y) * fuerza * Time.deltaTime);
+
+		#else
+
+			if(Input.GetKey(KeyCode.S))
+			{
+				rigidBodyIzquierda.AddForce(new Vector3(0, 0, fuerza * Time.deltaTime));
+			}
+			else if(Input.GetKey(KeyCode.W))
+			{
+				rigidBodyIzquierda.AddForce(new Vector3(0, 0, -fuerza * Time.deltaTime));
+			}
+			if(Input.GetKey(KeyCode.A))
+			{
+				rigidBodyIzquierda.AddForce(new Vector3(fuerza * Time.deltaTime, 0, 0));
+			}
+			else if(Input.GetKey(KeyCode.D))
+			{
+				rigidBodyIzquierda.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
+			}
+			
+			if(Input.GetKey(KeyCode.DownArrow))
+			{
+				rigidBodyDerecha.AddForce(new Vector3(0, 0, fuerza * Time.deltaTime));
+			}
+			else if(Input.GetKey(KeyCode.UpArrow))
+			{
+				rigidBodyDerecha.AddForce(new Vector3(0, 0, -fuerza * Time.deltaTime));
+			}
+			if(Input.GetKey(KeyCode.LeftArrow))
+			{
+				rigidBodyDerecha.AddForce(new Vector3(fuerza * Time.deltaTime, 0, 0));
+			}
+			else if(Input.GetKey(KeyCode.RightArrow))
+			{
+				rigidBodyDerecha.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
+			}
 		
-		if(Input.GetKey(KeyCode.LeftArrow))
-		{
-			rigidBodyDerecha.AddForce(new Vector3(0, 0, fuerza * Time.deltaTime));
-		}
-		else if(Input.GetKey(KeyCode.RightArrow))
-		{
-			rigidBodyDerecha.AddForce(new Vector3(0, 0, -fuerza * Time.deltaTime));
-		}
-		if(Input.GetKey(KeyCode.UpArrow))
-		{
-			rigidBodyDerecha.AddForce(new Vector3(fuerza * Time.deltaTime, 0, 0));
-		}
-		else if(Input.GetKey(KeyCode.DownArrow))
-		{
-			rigidBodyDerecha.AddForce(new Vector3(-fuerza * Time.deltaTime, 0, 0));
-		}
+		#endif
+
 
 		SoundManager.soundManagerRef.audioRodar.volume = (rigidBodyDerecha.velocity.sqrMagnitude + rigidBodyIzquierda.velocity.sqrMagnitude);
 	}
@@ -128,16 +156,39 @@ public class Salchicha : MonoBehaviour
 	{
 		if(showUI)
 		{
-			double scale = Screen.height / 1000.0;
+			double scale = Screen.height / 3500.0;
 		
-			Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
-			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteWASD.width / 2)), 
-			                         (float)(Screen.height - (position.y + (scale * spriteWASD.height /2))), (float)(scale * spriteWASD.width), 
+			#if UNITY_ANDROID || UNITY_IOS || UNITY_WP8 || UNITY_WP8_1
 
-			                         (float)(scale * spriteWASD.height)), spriteWASD);
+				Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
+				GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteJoystickL.width / 2)), 
+			                         (float)(Screen.height - (position.y + (scale * spriteJoystickL.height /2))), (float)(scale * spriteJoystickL.width), 
+				                         
+			                         (float)(scale * spriteJoystickL.height)), spriteJoystickL);
+				
+				position = Camera.main.WorldToScreenPoint(centroTextoR.position);
+				GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteJoystickD.width / 2)), 
+			                         (float)(Screen.height - (position.y + (scale * spriteJoystickD.height / 2))), (float) (scale * spriteJoystickD.width), 
+
+			                         (float)(scale * spriteJoystickD.height)), spriteJoystickD);
+
+					
+			#else
+
+				Vector2 position = Camera.main.WorldToScreenPoint(centroTextoL.position);
+				GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteWASD.width / 2)), 
+				                         (float)(Screen.height - (position.y + (scale * spriteWASD.height /2))), (float)(scale * spriteWASD.width), 
+				                         
+				                         (float)(scale * spriteWASD.height)), spriteWASD);
+				
+				position = Camera.main.WorldToScreenPoint(centroTextoR.position);
+				GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteFlechas.width / 2)), 
+			                         (float)(Screen.height - (position.y + (scale * spriteFlechas.height / 2))), (float) (scale * spriteFlechas.width), 
+
+			                         (float)(scale * spriteFlechas.height)), spriteFlechas);
+
+			#endif
 		
-			position = Camera.main.WorldToScreenPoint(centroTextoR.position);
-			GUI.DrawTexture(new Rect((float)(position.x - (scale * spriteFlechas.width / 2)), (float)(Screen.height - (position.y + (scale * spriteFlechas.height / 2))), (float) (scale * spriteFlechas.width), (float)(scale * spriteFlechas.height)), spriteFlechas);
 		}
 	}
 

@@ -22,7 +22,7 @@ public class Centinela : MonoBehaviour
 	public IEnumerator corutinaCinematica()
 	{
 		Camera cameraOld = Camera.main;
-		Salchicha.playerRef.showUI = false;
+		Salchicha.showUI = false;
 		GameObject instanciado = GameObject.Instantiate(prefabCinematica.gameObject);
 		instanciado.transform.position = new Vector3(900, 900, 900);
 		instanciado.GetComponent<CinematicaChafar>().Show(3);
